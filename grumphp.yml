@@ -1,6 +1,4 @@
-parameters:
-    git_dir: .
-    bin_dir: vendor/bin
+grumphp:
     process_timeout: 120
     testsuites:
       static:
@@ -17,8 +15,8 @@ parameters:
       securitychecker:
       git_commit_message:
       git_blacklist:
-          keywords: 
-          - '(;| |^)(die|dd|dump|var_dump|exit|eval)\(' 
+          keywords:
+          - '(;| |^)(die|dd|dump|var_dump|exit|eval)\('
           - '(;| |^)exit;'
           regexp_type: E
       phpcs:
@@ -26,10 +24,10 @@ parameters:
           whitelist_patterns: ['/^app(.*)/', '/^config(.*)/', '/^recources(.*)/']
       phpstan:
           ignore_patterns: ['/^tests(.*)/', '/^database(.*)/', '/^config(.*)/', '/^routes(.*)/']
-          configuration: vendor/cubesystems/static-analysers/larastan.neon  
-          level: 5          
+          configuration: vendor/cubesystems/static-analysers/larastan.neon
+          level: 5
       phpmd:
-          whitelist_patterns: ['/^app(.*)/', '/^config(.*)/', '/^recources(.*)/']          
+          whitelist_patterns: ['/^app(.*)/', '/^config(.*)/', '/^recources(.*)/']
           ruleset: ['vendor/cubesystems/static-analysers/phpdm-ruleset.xml']
       phpmnd:
         directory: 'app'
