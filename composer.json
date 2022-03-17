@@ -6,7 +6,7 @@
         "phpro/grumphp": "^v1.0",
         "squizlabs/php_codesniffer": "^3.4",
         "phpmd/phpmd": "^2.6",
-        "nunomaduro/larastan": "^0.6",
+        "nunomaduro/larastan": "^1.0",
         "wapmorgan/php-code-fixer": "^2.0",
         "povils/phpmnd" : "^2.1"
     }
