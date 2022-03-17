@@ -1,5 +1,5 @@
 {
-    "name": "cubesystems/static-analysers",
+    "name": "thekreicis/static-analysers",
     "description": "Grumphp wrapper for analysing Laravel projects",
     "license": "MIT",
     "require": {
